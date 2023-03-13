@@ -11,6 +11,38 @@ const routes: Routes = [
     redirectTo: 'home',
     pathMatch: 'full'
   },
+  {
+    path: 'splash-screen',
+    loadChildren: () => import('./pages/splash-screen/splash-screen.module').then( m => m.SplashScreenPageModule)
+  },
+  {
+    path: 'login',
+    loadChildren: () => import('./pages/login/login.module').then( m => m.LoginPageModule)
+  },
+  {
+    path: 'home',
+    loadChildren: () => import('./pages/home/home.module').then( m => m.HomePageModule)
+  },
+  {
+    path: 'login-admin-tutor',
+    loadChildren: () => import('./pages/login-admin-tutor/login-admin-tutor.module').then( m => m.LoginAdminTutorPageModule)
+  },
+  {
+    path: 'recover-ppass',
+    loadChildren: () => import('./pages/recover-ppass/recover-ppass.module').then( m => m.RecoverPPassPageModule)
+  },
+  {
+    path: 'lista-actividades',
+    loadChildren: () => import('./client/lista-actividades/lista-actividades.module').then( m => m.ListaActividadesPageModule)
+  },
+  {
+    path: 'detalle-actividad',
+    loadChildren: () => import('./client/detalle-actividad/detalle-actividad.module').then( m => m.DetalleActividadPageModule)
+  },
+  {
+    path: 'comunidad',
+    loadChildren: () => import('./client/comunidad/comunidad.module').then( m => m.ComunidadPageModule)
+  },
 ];
 
 @NgModule({
