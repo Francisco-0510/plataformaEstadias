@@ -47,6 +47,18 @@ const routes: Routes = [
     path: 'comunidad',
     loadChildren: () => import('./client/comunidad/comunidad.module').then( m => m.ComunidadPageModule)
   },
+  {
+    path: 'form-person-data',
+    loadChildren: () => import('./client/form-person-data/form-person-data.module').then( m => m.FormPersonDataPageModule)
+  },
+  {
+    path: 'formschool-data',
+    loadChildren: () => import('./client/formschool-data/formschool-data.module').then( m => m.FormschoolDataPageModule)
+  },
+  {
+    path: 'form-select-activity',
+    loadChildren: () => import('./client/form-select-activity/form-select-activity.module').then( m => m.FormSelectActivityPageModule)
+  },
 ];
 
 @NgModule({
