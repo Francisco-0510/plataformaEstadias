@@ -39,6 +39,6 @@ export class LoginPage implements OnInit {
   }
   save() {
     console.log(this.miFormulario.value);
-    this.router.navigate(['/lista-actividades']);
+    this.router.navigate(['/home']);
   }
 }
