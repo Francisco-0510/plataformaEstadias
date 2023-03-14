@@ -59,6 +59,26 @@ const routes: Routes = [
     path: 'form-select-activity',
     loadChildren: () => import('./client/form-select-activity/form-select-activity.module').then( m => m.FormSelectActivityPageModule)
   },
+  {
+    path: 'home-admin',
+    loadChildren: () => import('./admin/home-admin/home-admin.module').then( m => m.HomeAdminPageModule)
+  },
+  {
+    path: 'lista-tutorias',
+    loadChildren: () => import('./admin/lista-tutorias/lista-tutorias.module').then( m => m.ListaTutoriasPageModule)
+  },
+  {
+    path: 'detalle-tutoria',
+    loadChildren: () => import('./admin/detalle-tutoria/detalle-tutoria.module').then( m => m.DetalleTutoriaPageModule)
+  },
+  {
+    path: 'lista-usuarios',
+    loadChildren: () => import('./admin/lista-usuarios/lista-usuarios.module').then( m => m.ListaUsuariosPageModule)
+  },
+  {
+    path: 'detalle-usuario',
+    loadChildren: () => import('./admin/detalle-usuario/detalle-usuario.module').then( m => m.DetalleUsuarioPageModule)
+  },
 ];
 
 @NgModule({
