@@ -1,4 +1,4 @@
-<ion-header>
+<!-- <ion-header>
   <ion-toolbar>
     <ion-title>homeAdmin</ion-title>
   </ion-toolbar>
@@ -7,3 +7,115 @@
 <ion-content>
 
 </ion-content>
+ -->
+<ion-menu contentId="main-content"  >
+  <ion-header>
+    <ion-toolbar>
+      <ion-title>CultSports</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content class="">
+    <ul class="navbar-nav justify-content-end flex-grow-1 px-3">
+      <li class="nav-item my-2">
+        <a class="nav-link active" aria-current="page" href="#">Tablero</a>
+      </li>
+      <li class="nav-item my-2">
+        <a class="nav-link" href="#">Documentos</a>
+      </li>
+      <li class="nav-item dropdown my-2">
+        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          Tutorías Deportivas
+        </a>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">Tutoria 1</a></li>
+          <li><a class="dropdown-item" href="#">Tutoria 2</a></li>
+        </ul>
+      </li>
+      <li class="nav-item dropdown my-2">
+        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          Tutorías Culturales
+        </a>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">Tutoria 1</a></li>
+          <li><a class="dropdown-item" href="#">Tutoria 2</a></li>
+        </ul>
+      </li>
+      <li class="nav-item dropdown my-2">
+        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          Tutorías Grupales
+        </a>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">Tutoria 1</a></li>
+          <li><a class="dropdown-item" href="#">Tutoria 2</a></li>
+        </ul>
+      </li>
+    </ul>
+  </ion-content>
+</ion-menu>
+<div class="ion-page" id="main-content">
+  <ion-header >
+    <ion-toolbar>
+      <ion-buttons slot="start">
+        <ion-menu-button></ion-menu-button>
+      </ion-buttons>
+      <ion-title>CultuSports</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content  class="ion-padding" >
+    <div class="container-fluid text-center p-2 m-auto">
+      <!--CONTENEDOR CARD TOTAL DE TUTORIAS -->
+      <div class="container text-center">
+        <div class="row align-items-center text-center">
+          <div class="col-md-4 m-auto p-2 p-auto">
+            <div class="card card-depo py-3">
+              <div class="row g-0">
+                <div class="col-md-4 text-center m-auto">
+                  <ion-icon class="ball-icon" name="basketball-outline"></ion-icon>
+                </div>
+                <div class="col-md-8   m-auto text-md-start">
+                  <span>Tutorías Deportivas</span>
+                  <h5 class="fw-bolder">X tutorías</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 m-auto p-2 p-auto">
+            <div class="card card-cultu py-3">
+              <div class="row g-0">
+                <div class="col-md-4 text-center m-auto">
+                  <ion-icon name="musical-notes-outline" class="music-icon"></ion-icon>
+                </div>
+                <div class="col-md-8   m-auto text-md-start">
+                  <span>Tutorías Culturales</span>
+                  <h5 class="fw-bolder">X tutorías</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 m-auto p-2 p-auto">
+          <div class="card card-grupa py-3">
+            <div class="row g-0">
+              <div class="col-md-4 text-center m-auto">
+                <ion-icon name="people-outline" class="group-icon"></ion-icon>
+              </div>
+              <div class="col-md-8  m-auto text-md-start">
+                <span>Tutorías Grupales</span>
+                <h5 class="fw-bolder">X tutorías</h5>
+              </div>
+            </div>
+            
+          </div>
+          </div>
+        </div>
+      </div>
+      <!-- CONTENEDOR DE LISTA DE HOME /LISTA DE LIBERACION -->
+      <div class="container">
+        <div class="card">
+          <div class="card-header text-start">
+            <h5>Lista de Liberación de Tutorías</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+  </ion-content>
+</div>
