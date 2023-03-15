@@ -15,7 +15,7 @@
     </ion-toolbar>
   </ion-header>
   <ion-content class="">
-    <ul class="navbar-nav justify-content-end flex-grow-1 px-3">
+    <ul class="navbar-nav justify-content-end flex-grow-1 p-3">
       <li class="nav-item my-2">
         <a class="nav-link m-auto active" aria-current="page" href="#">Tablero</a>
       </li>
@@ -27,7 +27,7 @@
           Tutorías Deportivas
         </a>
         <ul class="dropdown-menu">
-          <li><a class="dropdown-item" href="#">Tutoria 1</a></li>
+          <li><a class="dropdown-item" [routerLink]="['/lista-tutorias']">Tutoria Deportiva 1</a></li>
           <li><a class="dropdown-item" href="#">Tutoria 2</a></li>
         </ul>
       </li>
@@ -112,14 +112,13 @@
       <div class="container">
         <div class="  card-home">
           <div class="card-header text-start ">
-            <div class="row">
+            <div class="row my-auto">
               <div class="col-md-8">
                   <h5>Lista de Liberación de Estadías</h5>
               </div>
-              <div class="col-md-4">
+              <div class="col-md-4 my-auto">
                   <form class="d-flex" role="search">
                     <input class="form-control  me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-primario w-25" type="submit">Buscar</button>
                   </form>
               </div>
             </div>
@@ -180,6 +179,7 @@
             <div class="card-body mt-4">
               <div class="table-responsive">
                 <table class="table text-start">
+                  <!-- Encabezado de la tabla -->
                   <thead>
                     <tr>
                       <th scope="col-auto">Matricula</th>
@@ -191,6 +191,7 @@
                       <th scope="col-auto">Estatus</th>
                     </tr>
                   </thead>
+                  <!-- Cuerpo de la tabla -->
                   <tbody>
                     <tr>
                       <th scope="row">UT******</th>
@@ -202,7 +203,7 @@
                       <td>
                         <a class=" btn-status status-noL dropdown-toggle" type="button" data-bs-toggle="dropdown"
                           aria-expanded="false">
-                          <small>No Liberado</small>
+                          No Liberado
                         </a>
                         <ul class="dropdown-menu">
                           <li><a class="dropdown-item fw-bold" href="#"><small>No Liberado</small></a></li>
@@ -221,7 +222,7 @@
                       <td>00:00</td>
                       <td>
                         <a class=" btn-status statusP dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                          <small>Pendiente</small>
+                          Pendiente
                         </a>
                         <ul class="dropdown-menu">
                           <li><a class="dropdown-item fw-bold" href="#"><small>No Liberado</small></a></li>
@@ -241,7 +242,7 @@
                       <td>
                         <a class=" btn-status status-siL dropdown-toggle" type="button" data-bs-toggle="dropdown"
                           aria-expanded="false">
-                          <small>Liberado</small>
+                          Liberado
                         </a>
                         <ul class="dropdown-menu">
                           <li><a class="dropdown-item fw-bold" href="#"><small>No Liberado</small></a></li>
@@ -261,7 +262,7 @@
                       <td>
                         <a class=" btn-status status-Mdc dropdown-toggle" type="button" data-bs-toggle="dropdown"
                           aria-expanded="false">
-                          <small>Situación Mdca</small>
+                          Situación Mdca
                         </a>
                         <ul class="dropdown-menu">
                           <li><a class="dropdown-item fw-bold" href="#"><small>No Liberado</small></a></li>

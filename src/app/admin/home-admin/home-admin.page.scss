@@ -62,9 +62,23 @@ ion-title{
     color: black;
     background-color: var(--white-light);
 }
+table tr{
+    padding: 10px;
+    vertical-align: middle;
+}
+table th{
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 600;
+}
 thead{
     background-color: #F1F5F9;
     padding: 10px;
+}
+tbody{
+    font-size: 12px;
+    letter-spacing: 0.1px;
+    font-weight: normal;
 }
 .page-item:hover{
     background-color: #F1F5F9;
@@ -78,6 +92,7 @@ thead{
     background-color: black;
     color: white;
 }
+
 /*ESTILOS PRIMERA TABLA First Try 
 .-mb-6{
     margin-bottom: -1.5rem;
