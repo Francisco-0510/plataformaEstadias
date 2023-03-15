@@ -17,7 +17,7 @@
   <ion-content class="">
     <ul class="navbar-nav justify-content-end flex-grow-1 px-3">
       <li class="nav-item my-2">
-        <a class="nav-link active" aria-current="page" href="#">Tablero</a>
+        <a class="nav-link m-auto active" aria-current="page" href="#">Tablero</a>
       </li>
       <li class="nav-item my-2">
         <a class="nav-link" href="#">Documentos</a>
@@ -64,7 +64,7 @@
   <ion-content  class="ion-padding" >
     <div class="container-fluid text-center p-2 m-auto">
       <!--CONTENEDOR CARD TOTAL DE TUTORIAS -->
-      <div class="container text-center">
+      <div class="container card-stats mb-4 text-center">
         <div class="row align-items-center text-center">
           <div class="col-md-4 m-auto p-2 p-auto">
             <div class="card card-depo py-3">
@@ -110,11 +110,189 @@
       </div>
       <!-- CONTENEDOR DE LISTA DE HOME /LISTA DE LIBERACION -->
       <div class="container">
-        <div class="card">
-          <div class="card-header text-start">
-            <h5>Lista de Liberación de Tutorías</h5>
+        <div class="  card-home">
+          <div class="card-header text-start ">
+            <div class="row">
+              <div class="col-md-8">
+                  <h5>Lista de Liberación de Estadías</h5>
+              </div>
+              <div class="col-md-4">
+                  <form class="d-flex" role="search">
+                    <input class="form-control  me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-primario w-25" type="submit">Buscar</button>
+                  </form>
+              </div>
+            </div>
           </div>
+         <!--   PRIMERA TABLA<div class="card-body h-100 text-start">
+            <div class="-mx-6 -mb-6">
+              <div class="vgt-wrap">
+                <div class="vgt-inner-wrap">
+                  <div class="vgt-responsive">
+                    <table id="vgt-table" class="vgt-table table-head v-middle" >
+                      <colgroup>
+                      <col id="col-0">
+                      <col id="col-1">
+                      <col id="col-2">
+                      <col id="col-3">
+                      <col id="col-4">
+                    </colgroup>
+                    <thead>
+                      <tr>
+                        <th class="vgt-left-align" scope="col" sort="descending" aria-controls="col-0" style="min-width: auto; width: auto;">
+                        <span>Nombre</span></th>
+                        <th class="vgt-left-align" scope="col" sort="descending" aria-controls="col-1" style="min-width: auto; width: auto;">
+                          <span>Nombre</span>
+                        </th>
+                        <th class="vgt-left-align" scope="col" sort="descending" aria-controls="col-2" style="min-width: auto; width: auto;">
+                          <span>Nombre</span>
+                        </th>
+                        <th class="vgt-left-align" scope="col" sort="descending" aria-controls="col-3" style="min-width: auto; width: auto;">
+                          <span>Nombre</span>
+                        </th>
+                        <th class="vgt-left-align" scope="col" sort="descending" aria-controls="col-4" style="min-width: auto; width: auto;">
+                          <span>Nombre</span>
+                        </th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr class>
+                        <td class="vgt-left-align">
+                          <div class="d-flex align-items-center">
+                            <div class="flex-none">
+                              <div class="flex-1 text-start">
+                                <small class="small font-medium text-slate-600 whitespace-nowrap"> Biffco Enterprises Ltd. </small>
+                                <div class="small font-normal text-slate-600 dark:text-slate-400"> Biffco@example.com </div>
+                              </div>
+                            </div>
+                          </div>
+                        </td>
+                        <td class="vgt-left-align"><span> Technology </span></td>
+                      </tr>
+                    </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div> -->
+          <!-- SEGUNDA TABLA -->
+            <div class="card-body mt-4">
+              <div class="table-responsive">
+                <table class="table text-start">
+                  <thead>
+                    <tr>
+                      <th scope="col-auto">Matricula</th>
+                      <th scope="col-auto">Nombre</th>
+                      <th scope="col-auto">Tutoría</th>
+                      <th scope="col-auto">Nrm. Teléfonico</th>
+                      <th scope="col-auto">Grupo</th>
+                      <th scope="col-auto">Hrs. Restantes</th>
+                      <th scope="col-auto">Estatus</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">UT******</th>
+                      <td>Nombre </td>
+                      <td>Nombre Tutoria</td>
+                      <td>000-000-0000</td>
+                      <td>Grupo</td>
+                      <td>00:00</td>
+                      <td>
+                        <a class=" btn-status status-noL dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                          aria-expanded="false">
+                          <small>No Liberado</small>
+                        </a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item fw-bold" href="#"><small>No Liberado</small></a></li>
+                          <li><a class="dropdown-item fw-bold" href="#"><small>Pendiente</small></a></li>
+                          <li><a class="dropdown-item fw-bold" href="#"><small>Si Liberado</small></a></li>
+                          <li><a class="dropdown-item fw-bold" href="#"><small>Situación Mdca</small></a></li>
+                        </ul>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">UT******</th>
+                      <td>Nombre </td>
+                      <td>Nombre Tutoria</td>
+                      <td>000-000-0000</td>
+                      <td>Grupo</td>
+                      <td>00:00</td>
+                      <td>
+                        <a class=" btn-status statusP dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          <small>Pendiente</small>
+                        </a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item fw-bold" href="#"><small>No Liberado</small></a></li>
+                          <li><a class="dropdown-item fw-bold" href="#"><small>Pendiente</small></a></li>
+                          <li><a class="dropdown-item fw-bold" href="#"><small>Si Liberado</small></a></li>
+                          <li><a class="dropdown-item fw-bold" href="#"><small>Situación Mdca</small></a></li>
+                        </ul>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">UT******</th>
+                      <td>Nombre </td>
+                      <td>Nombre Tutoria</td>
+                      <td>000-000-0000</td>
+                      <td>Grupo</td>
+                      <td>00:00</td>
+                      <td>
+                        <a class=" btn-status status-siL dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                          aria-expanded="false">
+                          <small>Liberado</small>
+                        </a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item fw-bold" href="#"><small>No Liberado</small></a></li>
+                          <li><a class="dropdown-item fw-bold" href="#"><small>Pendiente</small></a></li>
+                          <li><a class="dropdown-item fw-bold" href="#"><small>Si Liberado</small></a></li>
+                          <li><a class="dropdown-item fw-bold" href="#"><small>Situación Mdca</small></a></li>
+                        </ul>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">UT******</th>
+                      <td>Nombre </td>
+                      <td>Nombre Tutoria</td>
+                      <td>000-000-0000</td>
+                      <td>Grupo</td>
+                      <td>00:00</td>
+                      <td>
+                        <a class=" btn-status status-Mdc dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                          aria-expanded="false">
+                          <small>Situación Mdca</small>
+                        </a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item fw-bold" href="#"><small>No Liberado</small></a></li>
+                          <li><a class="dropdown-item fw-bold" href="#"><small>Pendiente</small></a></li>
+                          <li><a class="dropdown-item fw-bold" href="#"><small>Si Liberado</small></a></li>
+                          <li><a class="dropdown-item fw-bold" href="#"><small>Situación Mdca</small></a></li>
+                        </ul>
+                      </td>
+                    </tr>
+              
+              
+                  </tbody>
+                </table>
+                <nav aria-label="Page navigation example" >
+                  <ul class="pagination justify-content-center">
+                    <li class="page-item disabled">
+                      <a class="page-link fw-bold"> << </a>
+                    </li>
+                    <li class="page-item "><a class="page-link active" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item">
+                      <a class="page-link" href="#"> >> </a>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+
         </div>
+
       </div>
     </div>
   </ion-content>

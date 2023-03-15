@@ -357,6 +357,32 @@
 }
 
 //BUTTON TEXTS
+.btn-status{
+  padding: 4px 6px ;
+  margin: auto;
+  line-height: 20px;
+  vertical-align: middle;
+  background-color: #8C8CA1;
+  color: black;
+  border-radius: 2px;
+  font-weight: bold;
+}
+.status-noL{
+  background-color: var(--red-100);
+  color: var(--white-light);
+}
+.statusP{
+  background-color: var(--orange-50);
+  color: var(--white-light);
+}
+.status-siL{
+  background-color: var(--green-100);
+  color: var(--white-light);
+}
+.status-Mdc{
+  background-color: var(--blue-100);
+  color: var(--white-light);
+}
 button, .btn{
   text-align: center;
     margin: auto;
@@ -442,7 +468,7 @@ a{
   line-height: 140%;
 }
 
-
+input[type=search],
 ion-input[type=email],
 ion-input[type=password]
  {
@@ -457,7 +483,7 @@ ion-input[type=password]
 
 
 
-
+input[type=search]:focus,
 ion-input[type=text]:focus,
 ion-input[type=password]:focus {
   border: solid 1px var(--blue-75-outline);
