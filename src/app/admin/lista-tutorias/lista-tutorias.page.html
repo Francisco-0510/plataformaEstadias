@@ -70,7 +70,7 @@
               <h5 class="fw-bold text-uppercase">Lista de Tutorías</h5>
             </div>
             <div class="col-md-4 my-auto text-end">
-                <button class="btn btn-addTuto w-50"> Añadir Tutoría</button>
+                <button class="btn btn-addTuto w-50" [routerLink]="['/crud-tutoria']"> Añadir Tutoría</button>
                 <!-- <input class="form-control search-bar me-2" type="search" placeholder="Buscar Tutoría" aria-label="Search"> -->
                 <!-- <button class="btn btn-primario w-25" type="submit">Buscar</button> -->
             </div>
@@ -107,8 +107,8 @@
                       Opciones
                     </a>
                     <ul class="dropdown-menu">
-                      <li><a class="dropdown-item fw-bold" href="#"><small>Ver Más</small></a></li>
-                      <li><a class="dropdown-item fw-bold" href="#"><small>Editar</small></a></li>
+                      <li><a class="dropdown-item fw-bold" [routerLink]="['/detalle-tutoria']"><small>Ver Más</small></a></li>
+                      <li><a class="dropdown-item fw-bold" [routerLink]="['/crud-tutoria']"><small>Editar</small></a></li>
                       <li><a class="dropdown-item fw-bold btn-danger" href="#"><small>Eliminar</small></a></li>
                     </ul>
                   </td>
@@ -125,8 +125,8 @@
                       Opciones
                     </a>
                     <ul class="dropdown-menu">
-                      <li><a class="dropdown-item fw-bold" href="#"><small>Ver Más</small></a></li>
-                      <li><a class="dropdown-item fw-bold" href="#"><small>Editar</small></a></li>
+                      <li><a class="dropdown-item fw-bold" [routerLink]="['/detalle-tutoria']"><small>Ver Más</small></a></li>
+                      <li><a class="dropdown-item fw-bold" [routerLink]="['/crud-tutoria']"><small>Editar</small></a></li>
                       <li><a class="dropdown-item fw-bold" href="#"><small>Eliminar</small></a></li>
                     </ul>
                   </td>
@@ -144,8 +144,8 @@
                       Opciones
                     </a>
                     <ul class="dropdown-menu">
-                      <li><a class="dropdown-item fw-bold" href="#"><small>Ver Más</small></a></li>
-                      <li><a class="dropdown-item fw-bold" href="#"><small>Editar</small></a></li>
+                      <li><a class="dropdown-item fw-bold" [routerLink]="['/detalle-tutoria']"><small>Ver Más</small></a></li>
+                      <li><a class="dropdown-item fw-bold" [routerLink]="['/crud-tutoria']"><small>Editar</small></a></li>
                       <li><a class="dropdown-item fw-bold" href="#"><small>Eliminar</small></a></li>
                     </ul>
                   </td>
