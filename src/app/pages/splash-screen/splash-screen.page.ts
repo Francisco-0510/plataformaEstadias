@@ -13,7 +13,7 @@ export class SplashScreenPage implements OnInit {
   ngOnInit() {
     this.time();
   }
-  time() {
+   time() {
     let intervalId = setInterval(() => {
       this.tiempoReal = this.tiempoReal - 1;
       console.log(this.tiempoReal);
@@ -22,5 +22,5 @@ export class SplashScreenPage implements OnInit {
         this.router.navigate(['/login']);
       }
     }, 1000);
-  }
+  } 
 }
