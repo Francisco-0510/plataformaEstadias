@@ -193,16 +193,16 @@
                 <div class="col">
                   <div class="accordion" id="accordionExample">
                     <div class="accordion-item">
-                      <h2 class="accordion-header" id="headingOne">
+                      <h2 class="accordion-header p-0 m-0" id="headingOne">
                         <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
                           aria-expanded="true" aria-controls="collapseOne">
-                          <small>Objetivo de Tutoría</small>
+                          <h6 class="h6-semibold">Objetivo de la tutoría</h6>
                         </button>
                       </h2>
                       <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
                         data-bs-parent="#accordionExample">
                         <div class="accordion-body text-start">
-                          <span><strong>Agregar Objetivo de la Tutoría</strong></span>
+                          <p class="body-2 p-0 m-auto"><strong>Agregar Objetivo de la Tutoría</strong></p>
                         </div>
                       </div>
                     </div>
@@ -213,16 +213,16 @@
                 <div class="col">
                   <div class="accordion" id="accordionExample">
                     <div class="accordion-item">
-                      <h2 class="accordion-header" id="headingThree">
+                      <h2 class="accordion-header p-0 m-0" id="headingThree">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree"
                           aria-expanded="false" aria-controls="collapseThree">
-                         <small>Materiales (Opcional)</small>
+                         <h6 class="h6-semibold">Materiales para Tutoría</h6>
                         </button>
                       </h2>
                       <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
                         data-bs-parent="#accordionExample">
                         <div class="accordion-body text-start">
-                          <span>Ingresar Materiales requeridos para la actividad... <strong>*Opcional.</strong> </span>
+                          <p class="body-2">Ingresar Materiales requeridos para la actividad... <strong>*Opcional.</strong> </p>
                           <ol class="list-group list-group-numbered">
                             <li class="list-group-item">A list item</li>
                             <li class="list-group-item">A list item</li>
@@ -236,16 +236,16 @@
                 <div class="col">
                   <div class="accordion" id="accordionExample">
                     <div class="accordion-item">
-                      <h2 class="accordion-header" id="headingTwo">
+                      <h2 class="accordion-header m-0 p-0" id="headingTwo">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo"
                           aria-expanded="false" aria-controls="collapseTwo">
-                        <small>Reglas</small>
+                        <h6 class="h6-semibold">Reglas de Tutoría</h6>
                         </button>
                       </h2>
                       <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
                         data-bs-parent="#accordionExample">
                         <div class="accordion-body text-start">
-                          <span>Ingresar las reglas de la actividad... <strong class="text-danger">*Obligatorio.</strong> </span>
+                          <p class="body-2">Ingresar las reglas de la actividad... <strong class="text-danger">*Obligatorio.</strong> </p>
                           <ol class="list-group list-group-numbered">
                             <li class="list-group-item">A list item</li>
                             <li class="list-group-item">A list item</li>
@@ -407,6 +407,87 @@
         
           </div>
         
+        </div>
+      </div>
+      <div class="container my-2">
+        <div class="row">
+          <div class="col-md-6 ">
+            <div class="card p-2">
+              <div class="header row">
+                <div class="col-md-6 text-start">
+                  <h6 class="h6-semibold">Actividades de Tutoría</h6>
+                </div>
+    
+                <div class="col-md-6  m-auto text-end">
+                  <button class=" btn btn-addTuto ">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus"
+                      viewBox="0 0 16 16">
+                      <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
+                    </svg>
+                  </button>
+                </div>
+                
+              </div>
+              <!-- CONTENEDOR PARA LAS LISTAS DE ACTIVIDADES DE LA TUTORÍA /  CRONOGRAMA DE ACTIVIDADES -->
+              <div class="my-2 ">
+              <ul class="list-group text-start">
+                <li class="list-group-item d-flex  ">
+                  <input class="form-check-input me-2 m-auto text-start" type="checkbox" value="" id="firstCheckbox">
+                  <div class="ms-2 me-auto text-start">
+                      <div class="fw-bold sub-1">Nombre de Actividad</div>
+                      <small class="date-activity">Fecha - Lugar - Hora</small>
+                  </div>
+                </li>
+              </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card p-2">
+                <div class="header row">
+                  <div class="col-md-6 text-start">
+                    <h6 class="h6-semibold">Archivos de Tutoría</h6>
+                  </div>
+                
+                  <div class="col-md-6  m-auto text-end">
+                    <button class=" btn btn-addTuto ">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-folder-plus"
+                        viewBox="0 0 16 16">
+                        <path
+                          d="m.5 3 .04.87a1.99 1.99 0 0 0-.342 1.311l.637 7A2 2 0 0 0 2.826 14H9v-1H2.826a1 1 0 0 1-.995-.91l-.637-7A1 1 0 0 1 2.19 4h11.62a1 1 0 0 1 .996 1.09L14.54 8h1.005l.256-2.819A2 2 0 0 0 13.81 3H9.828a2 2 0 0 1-1.414-.586l-.828-.828A2 2 0 0 0 6.172 1H2.5a2 2 0 0 0-2 2zm5.672-1a1 1 0 0 1 .707.293L7.586 3H2.19c-.24 0-.47.042-.683.12L1.5 2.98a1 1 0 0 1 1-.98h3.672z" />
+                        <path
+                          d="M13.5 10a.5.5 0 0 1 .5.5V12h1.5a.5.5 0 1 1 0 1H14v1.5a.5.5 0 1 1-1 0V13h-1.5a.5.5 0 0 1 0-1H13v-1.5a.5.5 0 0 1 .5-.5z" />
+                      </svg>
+                    </button>
+                  </div>
+                
+                </div>
+                <div class="card-body">
+                  <ul class="list-group ">
+                    <li class="list-group-item d-flex justify-content-between align-items-start ">
+                      <div class="row m-auto text-start ">
+                        <div class="col">
+                         <p class="sub-1">Nombre del Archivo</p>
+                        </div>
+                        <div class="col ">
+                          <button class="btn btn-addTuto text-end">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cloud-arrow-down"
+                              viewBox="0 0 16 16">
+                              <path fill-rule="evenodd"
+                                d="M7.646 10.854a.5.5 0 0 0 .708 0l2-2a.5.5 0 0 0-.708-.708L8.5 9.293V5.5a.5.5 0 0 0-1 0v3.793L6.354 8.146a.5.5 0 1 0-.708.708l2 2z" />
+                              <path
+                                d="M4.406 3.342A5.53 5.53 0 0 1 8 2c2.69 0 4.923 2 5.166 4.579C14.758 6.804 16 8.137 16 9.773 16 11.569 14.502 13 12.687 13H3.781C1.708 13 0 11.366 0 9.318c0-1.763 1.266-3.223 2.942-3.593.143-.863.698-1.723 1.464-2.383zm.653.757c-.757.653-1.153 1.44-1.153 2.056v.448l-.445.049C2.064 6.805 1 7.952 1 9.318 1 10.785 2.23 12 3.781 12h8.906C13.98 12 15 10.988 15 9.773c0-1.216-1.02-2.228-2.313-2.228h-.5v-.5C12.188 4.825 10.328 3 8 3a4.53 4.53 0 0 0-2.941 1.1z" />
+                            </svg>
+                          </button>
+                        </div>
+                      </div>
+                    </li>
+                    
+                    
+                  </ul>
+                </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>

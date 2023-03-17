@@ -73,27 +73,27 @@
             </nav>
           <div class="card-body p-0">
             <h5 class="fw-bold">Formulario para CRUD tutoría</h5>
-            <div class="container-form m-sm-4 ">
+            <div class="container-form  ">
               <form class="row g-3">
                 <div class="col-md-6">
-                  <label for="inputText4" class="form-label">Nombre de Tutoría</label>
-                  <input type="text" class="form-control" placeholder="Nombre Actividad" id="inputText4">
+                  <label for="inputText4" class="label text-dark form-label">Nombre de Tutoría</label>
+                  <input type="text" class="textfiel-text form-control" placeholder="Nombre Actividad" id="inputText4">
                   <!-- <input type="email" class="form-control" id="inputEmail4"> -->
                 </div>
                 <div class="col-md-6">
-                  <label for="inputText5" class="form-label">Encargado de Tutoría</label>
-                  <input type="text" class="form-control" placeholder="Nombre Completo" id="inputText5">
+                  <label for="inputText5" class="label text-dark form-label">Encargado de Tutoría</label>
+                  <input type="text" class="textfiel-text form-control" placeholder="Nombre Completo" id="inputText5">
                   <!-- <input type="password" class="form-control" id="inputPassword4"> -->
                 </div>
                 <div class="col-md-6">
-                  <label for="inputDate1" class="form-label">Lugar de Tutoría</label>
+                  <label for="inputDate1" class="label text-dark form-label">Lugar de Tutoría</label>
                   <!-- <input type="date" class="form-control" id="inputDate" name="fecha-inicio" value="01/01/2023" min="01-01-2023"
                                     max="01-01-2024"> -->
-                  <input type="text" class="form-control" placeholder="Lugar Asignado" id="inputCity">
+                  <input type="text" class="textfiel-text form-control" placeholder="Lugar Asignado" id="inputCity">
                 </div>
                 <div class="col-md-3">
-                  <label for="inputState" class="form-label">Fecha de Inicio</label>
-                  <input type="date" class="form-control" id="inputDate2" name="fecha-inicio" value="01/01/2023" min="01-01-2023"
+                  <label for="inputState" class="label text-dark form-label">Fecha de Inicio</label>
+                  <input type="date" class="textfiel-text form-control" id="inputDate2" name="fecha-inicio" value="01/01/2023" min="01-01-2023"
                     max="01-01-2024">
                   <!-- <select id="inputState" class="form-select">
                                     <option selected>Choose...</option>
@@ -101,38 +101,45 @@
                                   </select> -->
                 </div>
                 <div class="col-md-3">
-                  <label for="inputZip" class="form-label">Fecha de Termino</label>
-                  <input type="date" class="form-control" id="inputDate2" name="fecha-inicio" value="01/01/2023" min="01-01-2023"
+                  <label for="inputZip" class="label text-dark form-label">Fecha de Termino</label>
+                  <input type="date" class="textfiel-text form-control" id="inputDate2" name="fecha-inicio" value="01/01/2023" min="01-01-2023"
                     max="01-01-2024">
                   <!-- <input type="text" class="form-control" id="inputZip"> -->
                 </div>
-                <div class="col-md-6">
-                  <label for="inputHorario1" class="form-label">Horario 1</label>
-                  <input type="text" class="form-control" placeholder="Ingresa el horario de la tutoría" id="inputHorario1">
+                <div class="col-md-4">
+                  <label for="inputHorario1" class="label text-dark form-label">Horario 1</label>
+                  <input type="text" class="textfiel-text form-control" placeholder="Ingresa el horario de la tutoría" id="inputHorario1">
                 </div>
-                <div class="col-md-6">
-                  <label for="inputHorario1" class="form-label">Horario 2 <small><strong>*Opcional</strong></small> </label>
-                  <input type="text" class="form-control" placeholder="Ingresa el segundo de la tutoría" id="inputHorario1">
+                <div class="col-md-4">
+                  <label for="inputHorario1" class="label text-dark form-label">Horario 2 <small><strong>*Opcional</strong></small> </label>
+                  <input type="text" class="textfiel-text form-control" placeholder="Ingresa el segundo de la tutoría" id="inputHorario1">
                 </div>
-                <div class="col-md-3">
-                  <label for="" class="form-label">Reglas de la Materia</label>
-                  <textarea name="" class="form-control" placeholder="Reglas de la actividad" id="" cols="30" rows="1"></textarea>
-                </div>
-                <div class="col-md-3">
-                  <label for="" class="form-label">Materiales de la Materia</label>
-                  <textarea name="" class="form-control" placeholder="Materiales para la actividad" id="" cols="30" rows="1"></textarea>
-                </div>
-                <div class="col-md-3">
-                  <label for="inputHorario1" class="form-label">Cupo de Tutoría</label>
-                  <input type="text" class="form-control" placeholder="Integrantes max de actividad" id="inputHorario1">
+                <div class="col-md-4">
+                  <label for="inputHorario1" class="label text-dark form-label">Horario 2 <small><strong>*Opcional</strong></small> </label>
+                  <div class="input-group">
+                    <input type="file" class="textfiel-text form-control" id="inputGroupFile04" aria-describedby="inputGroupFileAddon04"
+                      aria-label="Upload">
+                  </div>
                 </div>
                 <div class="col-md-3">
-                  <label for="inputHorario1" class="form-label">Horas Totales de Actividad</label>
-                  <input type="number" class="form-control" placeholder="Ingresa el horario de la tutoría" id="inputHorario1">
+                  <label for="" class="label text-dark form-label">Reglas de la Materia</label>
+                  <textarea name="" class="textfiel-text form-control" placeholder="Reglas de la actividad" id="" cols="30" rows="1"></textarea>
+                </div>
+                <div class="col-md-3">
+                  <label for="" class="label text-dark form-label">Materiales de la Materia</label>
+                  <textarea name="" class="textfiel-text form-control" placeholder="Materiales para la actividad" id="" cols="30" rows="1"></textarea>
+                </div>
+                <div class="col-md-3">
+                  <label for="inputHorario1" class="label text-dark form-label">Cupo de Tutoría</label>
+                  <input type="number" class="textfiel-text form-control" placeholder="Integrantes max de actividad" id="inputHorario1">
+                </div>
+                <div class="col-md-3">
+                  <label for="inputHorario1" class="label text-dark form-label">Horas Totales de Actividad</label>
+                  <input type="number" class="textfiel-text form-control " placeholder="Ingresa el horario de la tutoría" id="inputHorario1">
                 </div>
                 
                 <div class="col-md-4 text-center mx-auto">
-                  <button type="submit" class="btn btn-primario ">Registrar Tutoría</button>
+                  <button type="submit" class="btn btn-primario " [routerLink]="['/lista-tutorias']">Registrar Tutoría</button>
                 </div>
               </form>
             </div>

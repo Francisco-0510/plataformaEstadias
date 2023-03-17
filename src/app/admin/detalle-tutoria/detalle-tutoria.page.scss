@@ -54,3 +54,20 @@ ion-icon{
 .card{
     background-color: var(--white-light);
 }
+input[type=checkbox]{
+    border: solid 1px var(--green-75-outline);
+}
+input[type=checkbox]:checked{
+    background-color: var(--green-100);
+}
+.name-activity{
+    font-size: 0.8125em;
+    letter-spacing: 0.15px;
+    font-family: 'Poppins';
+    font-weight: 600;
+}
+.date-activity{
+    font-weight: 400;
+    font-size: 75.00%;
+    line-height: 18px;
+}
