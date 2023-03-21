@@ -87,6 +87,14 @@ const routes: Routes = [
     path: 'crud-usuarios',
     loadChildren: () => import('./admin/crud-usuarios/crud-usuarios.module').then( m => m.CrudUsuariosPageModule)
   },
+  {
+    path: 'crear-publicacion',
+    loadChildren: () => import('./instructor/crear-publicacion/crear-publicacion.module').then( m => m.CrearPublicacionPageModule)
+  },
+  {
+    path: 'ver-publicacion',
+    loadChildren: () => import('./instructor/ver-publicacion/ver-publicacion.module').then( m => m.VerPublicacionPageModule)
+  },
 ];
 
 @NgModule({
