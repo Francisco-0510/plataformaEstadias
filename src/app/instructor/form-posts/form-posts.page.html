@@ -1,0 +1,108 @@
+<!-- <ion-header>
+  <ion-toolbar>
+    <ion-title>formPosts</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+</ion-content>
+ -->
+<!-- <ion-header>
+  <ion-toolbar>
+    <ion-title>crearPublicacion</ion-title>
+  </ion-toolbar>
+</ion-header> -->
+
+<ion-content>
+  <div class="container m-auto p-2">
+    <div class="card text-bg-dark p-2">
+      <div class="card-header text-center fw-bold text-uppercase">
+        Formulario Crear Post
+      </div>
+      <div class="card-body">
+        <form class="row gx-3 gy-2 align-items-center">
+          <div class="col-sm-3">
+            <label for="" class="form-label">Actividad</label>
+            <select class="form-select" aria-label="Default select example">
+              <option selected>Seleccionar Actividad</option>
+              <option value="1">Deportiva</option>
+              <option value="2">Cultural</option>
+              <option value="3">Grupal</option>
+            </select>
+          </div>
+          <div class="col-sm-3">
+            <label for="" class="form-label">Nombre de la Actividad</label>
+            <input type="text" class="form-control" id="specificSizeInputName" placeholder="Name Activity">
+          </div>
+
+          <div class="col-sm-3">
+            <label for="" class="form-label">Encargado de Actividad</label>
+            <div class="input-group">
+              <input type="text" class="form-control" id="specificSizeInputName" placeholder="Name Encargado">
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <label for="" class="form-label">Objetivo/Descripción</label>
+            <textarea class="form-control" placeholder="Describe la actividad" id="floatingTextarea"></textarea>
+          </div>
+
+          <!-- <div class="col-sm-3">
+            <label for="" class="form-label">Lugar Asignado</label>
+            <input type="text" class="form-control" id="specificSizeInputName" placeholder="Lugar de tutoria">
+          </div> -->
+          <div class="col-sm-3 py-2">
+            <div class="input-group">
+              <span class="input-group-text">Fecha</span>
+              <input type="text" aria-label="First name" class="form-control" placeholder="00/00/00">
+            </div>
+          </div>
+          <!-- <div class="col-sm-3 py-2">
+            <div class="input-group">
+              <span class="input-group-text">Fecha de Fin</span>
+              <input type="text" aria-label="First name" class="form-control" placeholder="00/00/00">
+            </div>
+          </div> -->
+          <div class="col-sm-3 py-2">
+            <div class="mb-3">
+              <label for="formFile" class="form-label">Subir foto</label>
+              <input class="form-control" type="file" id="formFile">
+            </div>
+          </div>
+
+         <!--  <div class="card text-bg-dark p-2">
+            <div class="card-header text-center fw-bold text-uppercase">
+              Añadir horarios
+            </div>
+            <div class="card-body">
+              <div class="instrucciones mb-3">
+                Ingresa los diferentes horarios para la actividad
+              </div>
+              <label for="" class="form-label">Ingresa los datos correspondientes</label>
+              <div class="input-group">
+                <span class="input-group-text">1°</span>
+
+                <select id="inputState" class="form-select">
+                  <option selected>Día...</option>
+                  <option>Lunes</option>
+                  <option>Martes</option>
+                  <option>Miercoles</option>
+                  <option>Jueves</option>
+                  <option>Viernes</option>
+                </select>
+                <input type="text" aria-label="First name" class="form-control" placeholder="Hora Inicio">
+                <input type="text" aria-label="Last name" class="form-control" placeholder="Hora Fin">
+              </div>
+            </div>
+          </div>
+          <div class="col-auto m-auto">
+            <button type="submit" class="btn btn-outline-light">Añadir Hora</button>
+          </div> -->
+          <div class="col-sm-3 my-4">
+            <button type="submit" class="btn btn-success w-100">Publicar Post</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</ion-content>

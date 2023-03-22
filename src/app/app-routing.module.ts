@@ -95,6 +95,14 @@ const routes: Routes = [
     path: 'ver-publicacion',
     loadChildren: () => import('./instructor/ver-publicacion/ver-publicacion.module').then( m => m.VerPublicacionPageModule)
   },
+  {
+    path: 'form-posts',
+    loadChildren: () => import('./instructor/form-posts/form-posts.module').then( m => m.FormPostsPageModule)
+  },
+  {
+    path: 'ver-post',
+    loadChildren: () => import('./instructor/ver-post/ver-post.module').then( m => m.VerPostPageModule)
+  },
 ];
 
 @NgModule({
