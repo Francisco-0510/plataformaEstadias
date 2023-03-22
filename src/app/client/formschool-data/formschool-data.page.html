@@ -73,6 +73,15 @@
             </ion-select>
           </ion-item>
         </ion-list>
+        <ion-list>
+          <ion-item class="mb-3">
+            <ion-label position="stacked" class="label">Tipo de Actividad</ion-label>
+            <ion-select placeholder="Selecciona tu favorita" class="texttfiel-text" [multiple]="false">
+              <ion-select-option value="G1">Tutoría Deportiva</ion-select-option>
+              <ion-select-option value="G7">Tutoría Cultural</ion-select-option>
+            </ion-select>
+          </ion-item>
+        </ion-list>
         <button class="btn btn-primario" type="submit" [routerLink]="['/form-select-activity']">Contnuar > > > </button>
       </form>
     </ion-card-content>
