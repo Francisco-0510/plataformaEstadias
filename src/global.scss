@@ -389,6 +389,7 @@
   background-color: var(--blue-100);
   color: var(--white-light);
 }
+/* ESTILOS BOTONES GENERALES */
 button, .btn{
   text-align: center;
     margin: auto;
@@ -398,16 +399,18 @@ button, .btn{
     border-radius: 0px;
     text-transform: uppercase;
     font-family: "Poppins";
-    font-size: 16px;
-    font-weight: 700;
+    font-size: 100%;
+    font-weight: 600;
     line-height: 26px;
-    letter-spacing: -0.03em;
+    border: solid 1px transparent;
+    letter-spacing: 0.03em;
 }
-.btn-primario[disabled] {
-  background-color: var(--black-75-outline);
-  color: var(--black-25);
+button[disabled] {
+  background-color: var(--black-50);
+  color: var(--white-light);
   border: solid 1px var(--black-75-outline);
 }
+/* ESTILOS BOTONES USUARIO ESTUDIANTE */
 .btn-primario{
   background: rgba(61, 236, 157, 1);
     color: var(--black-color-student);
@@ -474,10 +477,10 @@ a{
   line-height: 140%;
 }
 
-ion-input[type=email],
+/* ion-input[type=email],
 ion-input[type=text],
-ion-input[type=password]
- {
+ion-input[type=password] */
+.input_student {
   width: 100%;
   margin: 8px 0;
   padding: 12px 20px;
@@ -487,12 +490,14 @@ ion-input[type=password]
   outline: none;
 }
 
-
+.input-student[type=text]:focus{
+  color: var(--green-utvco);
+}
 
 
 ion-input[type=text]:focus,
 ion-input[type=password]:focus {
-  border: solid 1px var(--blue-75-outline);
+  border: solid 1px var(--green-75-outline);
 }
 //Estilos Ion-input
 /*ion-input{ 

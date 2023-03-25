@@ -13,70 +13,157 @@
     <div class=" m-auto ">
       <h5 class="h5-medium mb-auto">Registtrate y Participa en las Actividades</h5>
       <h2 class="h2-bold py-2 mb-5">Culturales & Deportivas</h2>
-      <ion-grid class="mt-auto">
-        <ion-row class=" text-center mt-5">
-          <ion-col size="12" size-sm="3">
-            <ion-icon name="chevron-down-outline"></ion-icon>
-          </ion-col>
-          <ion-col size="12" size-sm="3">
-            <ion-icon name="chevron-down-outline"></ion-icon>
-          </ion-col>
-        </ion-row>
-      </ion-grid>
+      <div class="container m-auto text-center">
+        <ion-grid class="o">
+          <ion-row class=" text-center mt-5">
+            <ion-col size="12" size-sm="3" class="m-auto">
+              <ion-icon name="chevron-down-outline"></ion-icon>
+            </ion-col>
+            <ion-col size="12" size-sm="3" class="m-auto">
+              <ion-icon name="chevron-down-outline"></ion-icon>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </div>
     </div>
   </div>
   <!-- CONTENEDOR CARDS HOME -->
-  <div class="container-fluid container-card">
-    <div class="card card-tuto text-end my-2 ">
-      <img src="assets/img/deportiva.jpg" class="  h-100" style="filter: brightness(50%);" alt="...">
-      <div class="card-img-overlay ">
-        <h3 class="h3-bold  mb-4">Actividades Deportivas</h3>
-        <button [routerLink]="['/lista-actividades']" class="btn btn-primario mt-4 w-75" [routerLink]="['/lista-actividades']">Descubrir <ion-icon
-            name="chevron-forward-outline"></ion-icon></button>
+
+  <div class="container container-card m-auto">
+    <div class="row g-0">
+      <div class="col-sm-12 col-lg-6 g-0 g-lg-4">
+        <div class="card text-bg-dark text-end my-1 m-lg-4">
+          <img src="assets/img/deportiva.jpg" class="card-img" style="filter: brightness(50%);" alt="...">
+          <div class="card-img-overlay m-auto">
+            <h3 class="h3-bold  card-title">Actividades Deportivas</h3>
+            <button [routerLink]="['/lista-actividades']" class="btn btn-primario ">Descubrir <ion-icon
+                name="chevron-forward-outline"></ion-icon></button>
+          </div>
+        </div>
       </div>
-    </div>
-    <div class="card card-tuto text-end my-2 ">
-      <img src="assets/img/cultural.jpg" class="  h-100" style="filter: brightness(50%);" alt="...">
-      <div class="card-img-overlay ">
-        <h3 class="h3-bold  mb-4">Actividades Culturales</h3>
-        <button [routerLink]="['/lista-actividades']" class="btn btn-primario mt-4 w-75">Descubrir <ion-icon
-            name="chevron-forward-outline"></ion-icon></button>
+      <div class="col-sm-12 col-lg-6 g-0 g-lg-4">
+        <div class="card text-bg-dark text-end my-1 m-lg-4">
+          <img src="assets/img/cultural.jpg" class="card-img" style="filter: brightness(50%);" alt="...">
+          <div class="card-img-overlay m-auto">
+            <h3 class="h3-bold  card-title">Actividades Culturales</h3>
+            <button [routerLink]="['/lista-actividades']" class="btn btn-primario ">Descubrir <ion-icon
+                name="chevron-forward-outline"></ion-icon></button>
+          </div>
+        </div>
       </div>
     </div>
   </div>
-  <div class="container-fluid social-feed py-3">
-    <img src="./assets/img/login.png" alt="">
-    <div class="container-fluid container-feed ">
-      <h3 class="h3-bold">#deporTVCO</h3>
-      <ion-card *ngFor="let c of cards; let i = index">
-        <img alt="Silhouette of mountains" [src]=c.imgTuto />
-        <ion-card-header>
-          <span class="sub-2"> {{c.fecha}} </span>
-          <ion-card-title class="h6-bold">{{c.nombre}} </ion-card-title>
-        </ion-card-header>
-        <ion-card-content>
-          <ion-card-subtitle class="body-2">{{c.descripcion}}</ion-card-subtitle>
-          <ion-grid>
-            <ion-row>
-              <ion-col size-md="4" class="text-center btn-publi">
-                <ion-icon name="heart-outline" class="text-primary"></ion-icon>
-                {{c.likes}}
-              </ion-col>
-              <ion-col size-md="4" class="text-center btn-publi">
-                <ion-icon name="heart-dislike-outline" class="text-danger"></ion-icon>
-                {{c.dislikes}} </ion-col>
-              <ion-col size-md="4" class="text-center btn-publi">
-                <ion-icon name="chatbubble-outline" class="text-black"></ion-icon>
-                {{c.comments}} </ion-col>
-              <ion-col size-md="12" class="text-center btn-publi">
-                <ion-icon name="arrow-redo-outline" class="text-black"></ion-icon>
-                {{c.shared}}
-              </ion-col>
-            </ion-row>
-          </ion-grid>
-        </ion-card-content>
 
-      </ion-card>
+  <!-- CONTENEDOR PARA EL FEED -->
+  <div class="container-fluid feed-container m-auto">
+  <div class="row">
+    <div class="col-sm-12 col-lg-4 ">
+      <img src="./assets/img/login.png" alt="" class="img-fluid">
     </div>
+    <div class="col-sm-12 col-lg-8">
+      <div class="title-feed">
+        <h3 class="h3-bold">#deporTVCO</h3>
+      </div>
+      <div class="card p-0 m-auto" style="max-width: 28rem;" *ngFor="let c of cards; let i = index">
+        <div class="card-header">
+          <img [src]=c.imgTuto class="" alt="">
+        </div>
+        <div class="card-body">
+          <h5 class="h5-bold card-title text-black"> {{c.nombre}} </h5>
+          <p class="card-text"><small class="text-body-secondary"> {{c.fecha}} </small></p>
+          <p class="card-text text-dark"> {{c.descripcion}} </p>
+        </div>
+        <div class="card-footer text-black">
+          <div class="row m-auto text-center ">
+            <div class="col">
+              <ion-icon name="heart-outline" class="text-primary"></ion-icon>
+              {{c.likes}}
+            </div>
+            <div class="col">
+              <ion-icon name="heart-dislike-outline" class="text-danger"></ion-icon>
+              {{c.dislikes}} 
+            </div>
+            <div class="col">
+                <ion-icon name="chatbubble-outline" class="text-black"></ion-icon>
+                {{c.comments}}
+            </div>
+            <div class="col">
+              <ion-icon name="arrow-redo-outline" class="text-black"></ion-icon>
+              {{c.shared}}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+
+  <!-- <div class="container  container-card">
+   <div class="row">
+    <div class="col-sm-12 col-lg-6 m-auto ">
+      <div class="card my-4 bg-transparent card-tuto text-end">
+        <img src="assets/img/deportiva.jpg" class="" style="filter: brightness(50%);" alt="...">
+        <div class="card-img-overlay m-auto">
+          <h3 class="h3-bold  ">Actividades Deportivas</h3>
+          <button [routerLink]="['/lista-actividades']" class="btn btn-primario mt-4 ">Descubrir <ion-icon
+              name="chevron-forward-outline"></ion-icon></button>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-12 col-lg-6">
+      <div class="card bg-transparent card-tuto text-end my-4 ">
+        <img src="assets/img/cultural.jpg" class="  " style="filter: brightness(50%);" alt="...">
+        <div class="card-img-overlay m-auto ">
+          <h3 class="h3-bold">Actividades Culturales</h3>
+          <button [routerLink]="['/lista-actividades']" class="btn btn-primario mt-4 ">Descubrir <ion-icon
+              name="chevron-forward-outline"></ion-icon></button>
+        </div>
+      </div>
+    </div>
+   </div>
+  </div> -->
+  <div class="container-fluid social-feed py-3 text-lg-center">
+ <!--    <div class="row">
+      <div class="col-sm-12 col-lg-4">
+        <img src="./assets/img/login.png" alt="">
+      </div>
+      <div class="col-sm-12 col-lg-8 container-feed">
+        <div class="container-fluid">
+          <h3 class="h3-bold">#deporTVCO</h3>
+          <ion-card *ngFor="let c of cards; let i = index">
+            <img alt="Silhouette of mountains" [src]=c.imgTuto />
+            <ion-card-header>
+              <span class="sub-2"> {{c.fecha}} </span>
+              <ion-card-title class="h6-bold">{{c.nombre}} </ion-card-title>
+            </ion-card-header>
+            <ion-card-content>
+              <ion-card-subtitle class="body-2">{{c.descripcion}}</ion-card-subtitle>
+              <ion-grid>
+                <ion-row>
+                  <ion-col size-md="4" class="text-center btn-publi">
+                    <ion-icon name="heart-outline" class="text-primary"></ion-icon>
+                    {{c.likes}}
+                  </ion-col>
+                  <ion-col size-md="4" class="text-center btn-publi">
+                    <ion-icon name="heart-dislike-outline" class="text-danger"></ion-icon>
+                    {{c.dislikes}} </ion-col>
+                  <ion-col size-md="4" class="text-center btn-publi">
+                    <ion-icon name="chatbubble-outline" class="text-black"></ion-icon>
+                    {{c.comments}} </ion-col>
+                  <ion-col size-md="12" class="text-center btn-publi">
+                    <ion-icon name="arrow-redo-outline" class="text-black"></ion-icon>
+                    {{c.shared}}
+                  </ion-col>
+                </ion-row>
+              </ion-grid>
+            </ion-card-content>
+          </ion-card>
+        </div>
+        <div class="container-fluid  ">
+        </div>
+      </div>
+    </div> -->
+   
   </div>
 </ion-content>

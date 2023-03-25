@@ -22,13 +22,13 @@
           <form class="formulario" [formGroup]="miFormulario">
             <div>
               <ion-label position="stacked " class="label">Ingresa tu Usuario</ion-label>
-              <ion-input type="email" [pattern]="emailCheck" placeholder="UT*****" formControlName="username"></ion-input>
+              <ion-input class="input_student" type="email" [pattern]="emailCheck" placeholder="UT*****" formControlName="username"></ion-input>
               <span *ngIf="emailReq()" class="label-help text-danger">Dirección de correo no válida</span>
               <span *ngIf="emailPattern()" class="label-help text-danger">Patrón incorrecto</span>
             </div>
             <div>
               <ion-label position="stacked" class="label pb-2">Ingresa tu Contraseña</ion-label>
-              <ion-input type="password" placeholder="Ingrese su contraseña" formControlName="password"></ion-input>
+              <ion-input class="input_student" type="password" placeholder="Ingrese su contraseña" formControlName="password"></ion-input>
               <span class="form-text text-danger" *ngIf="campoValido('password')">Minimo 8 caracteres</span>
             </div>
             <div class="px-4">
@@ -57,8 +57,8 @@
                 <span class="form-text text-danger" *ngIf="campoValido('password')">Minimo 8 caracteres</span>
               </div> -->
             <!-- <a [routerLink]="['/recovery']" class="btn-link">Olvide mi contraseña</a> -->
-            <button *ngIf="miFormulario.invalid" disabled class="btn btn-primario mb-2"> Iniciar Sesión</button>
-            <button *ngIf="miFormulario.valid" type="sumbit" class="btn btn-primario my-2" (click)="save()">Iniciar
+            <button *ngIf="miFormulario.invalid" disabled class="btn btn-primario my-2 w-100">Iniciar Sesión</button>
+            <button *ngIf="miFormulario.valid" type="sumbit" class="btn btn-primario my-2 w-100" (click)="save()">Iniciar
               Sesión</button>
             <a [routerLink]="['/register']" class="btn-link mt-2">¿Olvidaste tu Contraseña?</a>
           </form>
