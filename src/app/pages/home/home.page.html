@@ -61,35 +61,44 @@
       <img src="./assets/img/login.png" alt="" class="img-fluid">
     </div>
     <div class="col-sm-12 col-lg-8">
-      <div class="title-feed">
+      <div class="title-feed text-center">
         <h3 class="h3-bold">#deporTVCO</h3>
       </div>
-      <div class="card p-0 m-auto" style="max-width: 28rem;" *ngFor="let c of cards; let i = index">
-        <div class="card-header">
+      <div class="card  p-0 m-auto my-2" style="max-width: 28rem;" *ngFor="let c of cards; let i = index">
+        <div class="card-header p-0">
           <img [src]=c.imgTuto class="" alt="">
         </div>
-        <div class="card-body">
+        <div class="card-body py-sm-0">
           <h5 class="h5-bold card-title text-black"> {{c.nombre}} </h5>
           <p class="card-text"><small class="text-body-secondary"> {{c.fecha}} </small></p>
           <p class="card-text text-dark"> {{c.descripcion}} </p>
         </div>
-        <div class="card-footer text-black">
-          <div class="row m-auto text-center ">
+        <div class="card-footer p-sm-0 p-lg-2 text-black">
+          <div class="row  m-auto text-center ">
             <div class="col">
-              <ion-icon name="heart-outline" class="text-primary"></ion-icon>
-              {{c.likes}}
+              <button class="btn btn-like">
+                <ion-icon name="heart-outline" class=" text-primary"></ion-icon>
+                {{c.likes}}
+              </button>
+              
             </div>
             <div class="col">
-              <ion-icon name="heart-dislike-outline" class="text-danger"></ion-icon>
-              {{c.dislikes}} 
+              <button class="btn btn-dislike ">
+                <ion-icon name="heart-dislike-outline" class="text-danger"></ion-icon>
+                {{c.dislikes}} 
+              </button>
             </div>
             <div class="col">
-                <ion-icon name="chatbubble-outline" class="text-black"></ion-icon>
-                {{c.comments}}
+              <button class="btn btn-comment">
+                 <ion-icon name="chatbubble-outline" class="text-success"></ion-icon>
+                  {{c.comments}}
+              </button>
             </div>
             <div class="col">
-              <ion-icon name="arrow-redo-outline" class="text-black"></ion-icon>
-              {{c.shared}}
+              <button class="btn btn-shared">
+                <ion-icon name="arrow-redo-outline" class="text-black"></ion-icon>
+                {{c.shared}}
+              </button>
             </div>
           </div>
         </div>

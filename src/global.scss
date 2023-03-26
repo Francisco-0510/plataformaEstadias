@@ -432,23 +432,40 @@ button[disabled] {
 .btn-link{
     font-weight: 800;
 font-size: 12px;
+letter-spacing: 1px;
 line-height: 18px;
-padding: 18px;
-gap: 10px;
 text-decoration: none;
+font-style: italic;
 text-align: center;
 text-transform: uppercase;
 color: var(--green-75-outline);
 }
 .btn-link:hover{
-  color: var(--green-primary-student
-  );
+  color: var(--green-primary-student);
+  text-underline-offset: 4px;
+  text-decoration: underline var(--green-75-outline);
 }
 a{
  color: var(--green-primary-student);
     text-decoration: none;
     font-weight:500;
     cursor: pointer;
+}
+/* ESTILOS PARA BTN DE CARD POST SOCIAL */
+.btn-like:hover{
+  border-radius: 5px;
+  font-weight: bold;
+  color: var(--blue-75-outline);
+}
+.btn-dislike:hover{
+  border-radius: 5px;
+  font-weight: bold;
+  color: var(--red-75-outline);
+}
+.btn-comment:hover{
+  border-radius: 5px;
+  font-weight: bold;
+  color: var(--green-75-outline);
 }
 ///PLACEHOLDER TEXT
 .textfiel-text {

@@ -19,27 +19,40 @@
 
 <ion-content class="ion-padding">
   <div class="container my-auto">
-    <ion-breadcrumbs class="ion-padding">
+    <ion-breadcrumbs class="my-2">
       <ion-breadcrumb [routerLink]="['/lista-actividades']" class=" sub-1">Actividades</ion-breadcrumb>
       <ion-breadcrumb class="actual sub-1">Detalles Actividades</ion-breadcrumb>
     </ion-breadcrumbs>
   </div>
   <div class="container m-auto">
     
-    <div class="container my-lg-4  px-lg-5 " >
-      <div class="card mb-3 bg-transparent border-light m-auto" >
+    <div class="container   px-lg-5   " >
+      <div class="card  bg-transparent border-light border-opacity-25 m-lg-5" >
         <div class="row g-0">
-          <div class="col-lg-4">
-            <img src="./assets/img/cultural.jpg" class="img-fluid w-100 " alt="...">
+          <div class="col-lg-4 my-0">
+            <img src="./assets/img/cultural.jpg" class=" w-100 h-100" alt="...">
           </div>
-          <div class="col-lg-8">
+          <div class="col-lg-8 p-lg-4">
             <div class="card-header">
               <ion-card-title class="h6-semibold">Nombre de Actividad</ion-card-title>
               <span class="badge text-bg-success me-2">25 Cupos</span>
               <span class="badge text-bg-danger">Sin cupos</span>
+              <div class="obj-activity my-2">
+                <p class="card-text pt-2">Descrición de la actividad</p>
+              </div>
             </div>
             <div class="card-body">
-            <ion-item>
+             
+              <ul class="list-group-flush px-0">
+                <li class="list-group-item"><span class="text-uppercase fw-bold text-success">Tutor: </span>Nombre Instructor</li>
+              </ul>
+              <ul class="list-group-flush px-0">
+                <li class="list-group-item"><span class="text-uppercase fw-bold text-success">Horarios: </span>Horario 1 / Horario 2</li>
+              </ul>
+              <ul class="list-group-flush px-0">
+                <li class="list-group-item"><span class="text-uppercase fw-bold text-success">Lugar: </span>Ubicación de tutoría</li>
+              </ul>
+           <!--  <ion-item>
               <span class="encargado ">Tutor: &nbsp; </span><span class="name ">Santiago Gonzales</span>
             </ion-item>
             <ion-item>
@@ -47,15 +60,31 @@
             </ion-item>
             <ion-item>
               <span class="encargado ">Lugar : &nbsp; </span><span class="name">Santiago Gonzales</span>
-            </ion-item>
-            <div>
-              <button class="btn btn-primario" [routerLink]="['/form-person-data']">Inscribirme</button>
+            </ion-item> -->
+            <div class="card-footer m-auto p-0 text-sm-start">
+              <button class="btn btn-primario w-75" [routerLink]="['/form-person-data']">Inscribirme</button>
+            </div>
+            <div class="accordion accordion-flush text-light " id="accordionFlushExample">
+              <div class="accordion-item text-light   bg-transparent">
+                <h2 class="accordion-header bg-transparent text-light ">
+                  <button class="accordion-button collapsed text-light bg-transparent" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                   <small>Más Detalles</small>
+                  </button>
+                </h2>
+                <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the
+                    <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+                </div>
+              </div>
+             
+             
             </div>
             </div>
           </div>
         </div>
       </div>
-      <ion-card class="m-lg-4">
+     <!--  <ion-card class="m-lg-4">
         <img alt="Silhouette of mountains" src="./assets/img/cultural.jpg" class="img-fluid  m-auto" />
         <ion-card-header>
           <ion-card-title class="h6-semibold">Nombre de Actividad</ion-card-title>
@@ -65,9 +94,59 @@
         <ion-card-content>
          
         </ion-card-content>
-      </ion-card>
+      </ion-card> -->
     </div>
   </div>
+
+    <div class="container-fluid feed-container m-auto">
+      <div class="row">
+        <div class="col-sm-12 col-lg-8">
+          <div class="title-feed text-center">
+            <h5 class="h5-bold">Comunidad UtVCO</h5>
+          </div>
+          <div class="card bg-transparent  p-0 m-auto my-2" style="max-width: 28rem;" *ngFor="let c of cards; let i = index">
+            <div class="card-header p-0">
+              <img [src]=c.imgTuto class="" alt="">
+            </div>
+            <div class="card-body py-sm-0 text-light">
+              <h5 class="h5-bold card-title "> {{c.nombre}} </h5>
+              <p class="card-text"><small class=""> {{c.fecha}} </small></p>
+              <p class="card-text "> {{c.descripcion}} </p>
+            </div>
+            <div class="card-footer p-sm-0 p-lg-2 text-light">
+              <div class="row  m-auto  text-center ">
+                <div class="col">
+                  <button class="btn btn-like  text-light">
+                    <ion-icon name="heart-outline" class=" text-primary"></ion-icon>
+                    {{c.likes}}
+                  </button>
+    
+                </div>
+                <div class="col">
+                  <button class="btn btn-dislike text-light ">
+                    <ion-icon name="heart-dislike-outline" class="text-danger"></ion-icon>
+                    {{c.dislikes}}
+                  </button>
+                </div>
+                <div class="col">
+                  <button class="btn btn-comment  text-light">
+                    <ion-icon name="chatbubble-outline" class="text-success"></ion-icon>
+                    {{c.comments}}
+                  </button>
+                </div>
+                <div class="col">
+                  <button class="btn btn-shared  text-light">
+                    <ion-icon name="arrow-redo-outline" class="text-black"></ion-icon>
+                    {{c.shared}}
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
   <div class="container m-auto p-2">
    
     <nav>
